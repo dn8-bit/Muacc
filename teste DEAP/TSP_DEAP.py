@@ -25,7 +25,7 @@ def generate_cities(n):
     "Make a set of n cities, each with random coordinates."
     return set(City(random.randrange(10, 890), random.randrange(10, 590)) for c in range(n))
 
-num_cities = 30
+num_cities = 5
 cities = generate_cities(num_cities)
 
 def plot_tour(tour, alpha=1, color=None):
@@ -64,6 +64,7 @@ def create_tour(individual):
 def evaluation(individual):
     '''Evaluates an individual by converting it into
     a list of cities and passing that list to total_distance'''
+    print(individual)
     return (total_distance(create_tour(individual)),)
 
 toolbox.register("evaluate", evaluation)
@@ -72,5 +73,5 @@ pop = toolbox.population(n=100)
 result, log = algorithms.eaSimple(pop, toolbox,cxpb=0.8, mutpb=0.2,ngen=400, verbose=False)
 best_individual = tools.selBest(result, k=1)[0]
 print('Fitness of the best individual: ', evaluation(best_individual)[0])
-
+print(cities)
 plot_tour(create_tour(best_individual))
