@@ -1,0 +1,17 @@
+'R_PGAMT'
+'R_IMPC'
+'R_AIRC3'
+'R_TRPAS2'
+'R_IPPMIb'
+'R_IPPMIa'
+'R_ACOAD5f'
+'R_ACOAD4f'
+'R_ACOAD7f'
+'R_ACOAD6f'
+'R_ACOAD1f'
+'R_GLUR'
+'R_ACOAD3f'
+'R_ACOAD2f'
+'R_DHQS'
+
+['R_ADK3','R_HEX1', 'R_PPM', 'R_ACKr', 'R_PPKr']

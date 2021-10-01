@@ -1,0 +1,24 @@
+'R_KARA1'
+'R_ASPTA'
+'R_GLUDy'
+'R_G3PD2'
+'R_ILETA'
+'R_ORPT'
+'R_SDPTA'
+'R_CTECOAI7'
+'R_DHORTS'
+'R_MOX'
+'R_ASAD'
+'R_HSDy'
+'R_ACOTA'
+'R_AGPR'
+'R_PGM'
+'R_PGK'
+'R_DDPA'
+'R_TKT1'
+'R_PHETA1'
+'R_TYRTA'
+
+
+
+['R_TALA','R_VPAMTr','R_VALTA', ]

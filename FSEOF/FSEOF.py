@@ -2,6 +2,7 @@ import cobra
 import pandas as pd
 import numpy as np
 import os
+import matplotlib.pyplot as plt
 
 
 
@@ -65,3 +66,4 @@ for item in fluxos_forcados:
 with open('resultados.txt', 'w') as out_file:
     for a in lista_selecionadas:
         out_file.writelines(str(a)+' \n')
+lista_fluxos.append(fluxos_maximo)
