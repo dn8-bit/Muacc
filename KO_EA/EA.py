@@ -20,10 +20,11 @@ def gerar_individuo(n):
 
 
 def evaluation(individual):
-    print(cobra_model.reactions[individual[0]].id)
-    print(cobra_model.reactions[individual[1]].id)
-    print(cobra_model.reactions[individual[2]].id)
-    return 0
+    cobra_model.reactions[individual[0]].knock_out()
+    cobra_model.reactions[individual[1]].knock_out()
+    cobra_model.reactions[individual[2]].knock_out()
+    sol= cobra_model.optimize().fluxes
+    return sol["R_EX_ccmuac_e"]
 a=gerar_individuo(3)
 print(evaluation(a))
 print(a)
