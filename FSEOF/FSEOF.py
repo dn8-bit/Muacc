@@ -4,9 +4,7 @@ import numpy as np
 import os
 import matplotlib.pyplot as plt
 
-
-
-cobra_model= cobra.io.load_json_model('/home/daniel/github/Muacc/KO_EA/GEMs/RotaA.json')
+cobra_model= cobra.io.load_json_model('RotaA.json')
 biomass_id='R_Ec_biomass_iJO1366_core_53p95M'
 alvo="R_EX_ccmuac_e"
 n_vezes=10
@@ -39,7 +37,6 @@ n=float(n_vezes)+1
 for k in range(1, int(n_vezes)+1):
     v_forcado=v_0+(k/n)*(v_final-v_0)
     fluxos_forcados.append(v_forcado)
-
 i=0
 cobra_model.objective=biomass_id
 reacao_alvo=cobra_model.reactions.get_by_id(alvo)
